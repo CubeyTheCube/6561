@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>6561 Game - Three in a row inspired by 2048 game!</title>
+  <meta name="description" content="Three in a row inspired by 2048 game! Careful - this game is extremely addictive!">
+
+  <link href="./src/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="520">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+
+  <meta property="og:title" content="6561 game"/>
+  <meta property="og:site_name" content="6561 game"/>
+  <meta property="og:description" content="Three in a row inspired by 2048 game! Careful - this game is extremely addictive!"/>
+
+</head>
+<body data-twttr-rendered="true">
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">6561</h1>
+      <div class="scores-container">
+        <div class="score-container">0<div class="score-addition">0</div></div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">Join the numbers and get to the <strong>6561 tile!</strong></p>
+      <a class="restart-button">New Game</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container"><div class="tile tile-2 tile-position-2-4 tile-new"><div class="tile-inner">2</div></div><div class="tile tile-2 tile-position-4-3"><div class="tile-inner">2</div></div><div class="tile tile-2 tile-position-4-3"><div class="tile-inner">2</div></div><div class="tile tile-4 tile-position-4-3 tile-merged"><div class="tile-inner">4</div></div><div class="tile tile-4 tile-position-4-4"><div class="tile-inner">4</div></div></div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When
+      three tiles with the same number in a row touch each other, they <strong>merge into one tile with number incremented by 1!</strong>
+    </p>
+    <hr>
+    <p>
+
+Based on  <a href="http://gabrielecirulli.github.io/2048/" target="_blank">the 2048 game</a>. 
+Created by <a href="http://suki.ipb.ac.rs" target="_blank">Šuki</a>.
+The original 2048 game created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> 
+</p>
+
+  <script src="src/animframe_polyfill.js"></script>
+  <script src="src/keyboard_input_manager.js"></script>
+  <script src="src/html_actuator.js"></script>
+  <script src="src/grid.js"></script>
+  <script src="src/tile.js"></script>
+  <script src="src/local_storage_manager.js"></script>
+  <script src="src/game_manager.js"></script>
+  <script src="src/application.js"></script>
+
+</body></html>
